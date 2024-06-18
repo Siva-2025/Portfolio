@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles for smaller images */
+        .project-image-container {
+            width: 100%; /* Full width */
+            padding-top: 75%; /* Aspect ratio for square images */
+            position: relative;
+            overflow: hidden;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+        }
+
+        .project-image-container img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+    <!-- Navigation -->
+    <nav class="bg-blue-600 shadow-md fixed w-full z-10">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-white">My Portfolio</div>
+            <ul class="flex space-x-4">
+                <li><a href="#about" class="text-white hover:text-gray-200">About Me</a></li>
+                <li><a href="#academics" class="text-white hover:text-gray-200">Academics</a></li>
+                <li><a href="#projects" class="text-white hover:text-gray-200">Projects</a></li>
+                <li><a href="#skills" class="text-white hover:text-gray-200">Technical Skills</a></li>
+                <li><a href="#extra" class="text-white hover:text-gray-200">Extra Curricular</a></li>
+                <li><a href="#contact" class="text-white hover:text-gray-200">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Image and About Me -->
+    <section id="hero" class="bg-gray-200 py-20">
+        <div class="container mx-auto flex items-center justify-center">
+            <div class="flex-1 max-w-lg">
+                <div class="overflow-hidden rounded-lg shadow-md transition-transform duration-300 ease-in-out transform hover:scale-105">
+                    <img src="images/software-developer-cartoon-male.png" alt="Software Developer" class="mx-auto">
+                </div>
+                <section id="about" class="about-container text-center transition-opacity duration-300 ease-in-out hover:opacity-90">
+                    <h2 class="text-4xl font-bold mb-4">Siva Sai Pavan Sagi</h2>
+                    <p class="text-lg leading-7 mb-6">
+                        Passionate IT student with a focus on Data Structures, Algorithms, and proficient Flutter app development skills.
+Proven ability to craft efficient solutions and translate concepts into functional applications. Strong communication and
+interpersonal skills enable effective collaboration within teams and with stakeholders.
+                    </p>
+                    <p class="text-lg leading-7 mb-6">
+                        My journey in the IT field started from a young age, and over the years, I have honed my skills in multiple programming languages and frameworks. I'm always eager to take on new challenges and collaborate with like-minded individuals.
+                    </p>
+                    <a href="https://drive.google.com/file/d/1DRP8jEdt4sA3aDRjCxPCzu4a5SZbyq9P/view?usp=drivesdk" target="_blank" class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 py-3 rounded-md text-lg font-semibold shadow-md transition duration-300 ease-in-out transform hover:scale-105">Resume</a>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academics Section -->
+    <section id="academics" class="bg-white py-20">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-8">Academics</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Academic Card 1 -->
+                <div class="academic-card bg-gray-100 rounded-lg p-6 shadow-md transition-transform duration-300 ease-in-out transform hover:scale-105">
+                    <h3 class="text-xl font-bold mb-2">B V Raju Institute of Technology</h3>
+                    <p class="text-lg mb-2"><span class="font-semibold">Year:</span> 2021-2025</p>
+                    <p class="text-lg mb-2"><span class="font-semibold">Specialization:</span> B.Tech(Information Technology)</p>
+                    <p class="text-lg mb-2"><span class="font-semibold">Percentage:</span>8.89/10 CGPA (As of 5th Semester)</p>
+                </div>
+                <!-- Academic Card 2 -->
+                <div class="academic-card bg-gray-100 rounded-lg p-6 shadow-md transition-transform duration-300 ease-in-out transform hover:scale-105">
+                    <h3 class="text-xl font-bold mb-2">Tirumala Junior Kalasala</h3>
+                    <p class="text-lg mb-2"><span class="font-semibold">Year:</span> 2019-2021</p>
+                    <p class="text-lg mb-2"><span class="font-semibold">Specialization:</span> Intermediate(MPC)</p>
+                    <p class="text-lg mb-2"><span class="font-semibold">Percentage:</span> 98.4%</p>
+                </div>
+                <!-- Academic Card 3 -->
+                <div class="academic-card bg-gray-100 rounded-lg p-6 shadow-md transition-transform duration-300 ease-in-out transform hover:scale-105">
+                    <h3 class="text-xl font-bold mb-2">Srichaitanya Techno School</h3>
+                    <p class="text-lg mb-2"><span class="font-semibold">Year:</span> 2019</p>
+                    <p class="text-lg mb-2"><span class="font-semibold">Percentage:</span> 10/10 CGPA</p>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="bg-gray-200 py-20">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-8">Projects</h2>
+
+            <!-- Project 1 -->
+            <div class="project-container mb-16">
+                <h3 class="text-2xl font-bold text-center mb-4">Medicine Reminder Application</h3>
+                <!-- Images Row -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                    <div class="project-image-container">
+                        <img src="images/prjct1.1.jpeg" alt="Project 1 Image 1" class="object-cover rounded-lg">
+                    </div>
+                    <div class="project-image-container">
+                        <img src="images/prjct1.2.jpeg" alt="Project 1 Image 2" class="object-cover rounded-lg">
+                    </div>
+                    <div class="project-image-container">
+                        <img src="images/prjct1.3.jpeg" alt="Project 1 Image 3" class="object-cover rounded-lg">
+                    </div>
+                </div>
+                <!-- Description and Outcome -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="text-xl font-bold mb-4">Project Description</h4>
+                        <p class="text-lg mb-4">
+                            •Developed a mobile application using the cross-platform framework Flutter and Dart, enabling medication
+                            reminders.<br>
+                            • The app provides notifications to remind users to take their medications on time.<br>
+                            • Implemented a user-friendly interface to ensure ease of use.<br>
+                            • Utilized the Android Notification package for reliable notifications and implemented MySQL and local storage for
+                            secure and efficient data handling.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-4">Outcome</h4>
+                        <p class="text-lg mb-4">This user-friendly medication reminder app utilizes Flutter for smooth operation on most phones. Timely notifications ensure you never miss a dose, with secure data storage keeping your information safe.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-container">
+                <h3 class="text-2xl font-bold text-center mb-4">VSYLLABUS R22</h3>
+                <!-- Images Row -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                    <div class="project-image-container">
+                        <img src="images/prjct2.1.jpeg" alt="Project 2 Image 1" class="object-cover rounded-lg">
+                    </div>
+                    <div class="project-image-container">
+                        <img src="images/prjct2.2.jpeg" alt="Project 2 Image 2" class="object-cover rounded-lg">
+                    </div>
+                    <div class="project-image-container">
+                        <img src="images/prjct2.3.jpeg" alt="Project 2 Image 3" class="object-cover rounded-lg">
+                    </div>
+                </div>
+                <!-- Description and Outcome -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="text-xl font-bold mb-4">Project Description</h4>
+                        <p class="text-lg mb-4">• Developed a static mobile app for effortless access to syllabus details for R22 IT students, streamlining academic
+                            planning and facilitating efficient study routines.<br>
+                            • Enhanced user experience with intuitive navigation, providing comprehensive coverage of the syllabus for easy
+                            reference.
+                            </p>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-4">Outcome</h4>
+                        <p class="text-lg mb-4"> This static mobile app offers a streamlined view of all syllabus details, with intuitive navigation for easy access and efficient study planning.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="bg-gray-100 py-20">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-8">Technical Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Languages -->
+                <div class="bg-white p-6 rounded-lg shadow-md transition-transform transform hover:scale-105 hover:bg-blue-100">
+                    <h3 class="text-2xl font-semibold mb-4">Languages</h3>
+                    <p class="text-lg">C/C++, Java, SQL, PL/SQL, Python, JavaScript</p>
+                </div>
+
+                <!-- Programming Skills -->
+                <div class="bg-white p-6 rounded-lg shadow-md transition-transform transform hover:scale-105 hover:bg-blue-100">
+                    <h3 class="text-2xl font-semibold mb-4">Programming Skills</h3>
+                    <p class="text-lg">Object Oriented Programming, Data Structures and Algorithms</p>
+                </div>
+
+                <!-- Frameworks and Libraries -->
+                <div class="bg-white p-6 rounded-lg shadow-md transition-transform transform hover:scale-105 hover:bg-blue-100">
+                    <h3 class="text-2xl font-semibold mb-4">Frameworks and Libraries</h3>
+                    <p class="text-lg">Flutter, React-JS</p>
+                </div>
+
+                <!-- DevOps Tools -->
+                <div class="bg-white p-6 rounded-lg shadow-md transition-transform transform hover:scale-105 hover:bg-blue-100">
+                    <h3 class="text-2xl font-semibold mb-4">DevOps Tools</h3>
+                    <p class="text-lg">GitHub, Git</p>
+                </div>
+
+                <!-- Front End -->
+                <div class="bg-white p-6 rounded-lg shadow-md transition-transform transform hover:scale-105 hover:bg-blue-100">
+                    <h3 class="text-2xl font-semibold mb-4">Front End</h3>
+                    <p class="text-lg">HTML, CSS</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Extra Curricular Section -->
+    <section id="extra" class="bg-white py-20">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-8">Extra Curricular Activities</h2>
+            <div class="space-y-8">
+                <!-- Promethean-2023 -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-2">Promethean-2023</h3>
+                    <p class="text-lg mb-4">
+                        • Organized and Coordinated a Technical event named CodeCraft for Promethean-2023, a national level technical symposium at BVRIT.
+                    </p>
+                </div>
+                <!-- Hackathon-2023 -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-2">Hackathon-2023</h3>
+                    <p class="text-lg mb-4">
+                        • Participated in Webathon, crafting a UI solution for a given problem statement using Canva design tools. Collaborated with a team to create an intuitive and visually appealing interface.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="contact" class="bg-blue-600 text-white py-8">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-4">Contact</h2>
+            <p class="text-lg mb-2">Email: sagisiva22@gmail.com</p>
+            <p class="text-lg mb-2">Phone: 8328654893</p>
+            <p class="text-lg mb-2">
+                <a href="https://www.linkedin.com/in/siva-sagi-275170250" target="_blank" class="text-white hover:underline">LinkedIn</a>
+            </p>
+            <p class="text-lg mb-2">
+                <a href="https://leetcode.com/u/s_siva_2025/" target="_blank" class="text-white hover:underline">LeetCode</a>
+            </p>
+            <p class="text-lg mb-2">
+                <a href="https://www.codechef.com/users/s_siva_2025" target="_blank" class="text-white hover:underline">CodeChef</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

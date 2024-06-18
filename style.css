@@ -1,0 +1,30 @@
+/* Fade-in animation for About Me section */
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .fade-in.visible {
+    opacity: 1;
+  }
+  
+  /* Resume button styles */
+  .resume-btn {
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    /* Combined transition for background and transform */
+    transition: all 0.3s ease;  /* Adjust as needed for animation */
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 20px; /* Adjust margin as needed */
+  }
+  
+  .resume-btn:hover {
+    background: linear-gradient(90deg, #764ba2, #667eea);
+    transform: scale(1.05);
+  }
+  
